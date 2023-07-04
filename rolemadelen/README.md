@@ -1,1 +1,4 @@
-# rolemadelen
+- [Singly Linked List](./linked-list)
+  - Know how to implement with and without a tail pointer.
+  - Know the difference between Singly, Doubly, and Circular Linked Lists.
+  - Know the benefit of using Linked Lists over Arrays and vice versa.
