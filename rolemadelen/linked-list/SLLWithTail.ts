@@ -19,6 +19,7 @@ interface ILinkedList<T> {
 export class SinglyLinkedList<T> implements ILinkedList<T> {
   private length: number = 0;
   private head: NodeType<T> = null;
+  private tail: NodeType<T> = null;
 
   /* O(1) */
   size() {
@@ -34,8 +35,9 @@ export class SinglyLinkedList<T> implements ILinkedList<T> {
   pushFront(data: T) {
     const newNode = new Node<T>(data);
 
-    if (this.isEmpty()) {
+    if (!this.head) {
       this.head = newNode;
+      this.tail = newNode;
     } else {
       newNode.next = this.head;
       this.head = newNode;
@@ -44,18 +46,16 @@ export class SinglyLinkedList<T> implements ILinkedList<T> {
     this.length += 1;
   }
 
-  /* O(n), n = number of nodes */
+  /* O(1) */
   pushBack(data: T) {
     const newNode = new Node<T>(data);
 
-    if (this.isEmpty()) {
+    if (!this.tail) {
       this.head = newNode;
+      this.tail = newNode;
     } else {
-      let curr = this.head;
-      while (curr && curr.next != null) {
-        curr = curr.next;
-      }
-      if (curr) curr.next = newNode;
+      this.tail.next = newNode;
+      this.tail = newNode;
     }
 
     this.length += 1;
@@ -80,26 +80,24 @@ export class SinglyLinkedList<T> implements ILinkedList<T> {
     if (this.length === 1) {
       nodeTBDel = this.head;
       this.head = null;
+      this.tail = null;
       this.length = 0;
       return nodeTBDel;
     }
 
     let curr = this.head;
-    let prev: NodeType<T> = null;
-
-    while (curr && curr.next) {
-      prev = curr;
+    while (curr && curr.next != this.tail) {
       curr = curr.next;
     }
 
-    if (prev) {
-      nodeTBDel = prev.next;
-      prev.next = null;
+    nodeTBDel = this.tail;
+    if (curr) {
+      curr.next = null;
+      this.tail = curr;
       this.length -= 1;
-      return nodeTBDel;
     }
 
-    return null;
+    return nodeTBDel;
   }
 
   /* O(1) */
@@ -109,21 +107,16 @@ export class SinglyLinkedList<T> implements ILinkedList<T> {
     return null;
   }
 
-  /* O(n), n = number of nodes */
+  /* O(1) */
   getBack(): T | null {
-    if (this.head) {
-      let curr = this.head;
-      while (curr.next) {
-        curr = curr.next;
-      }
-      return curr.value;
-    }
+    if (this.tail) this.tail.value;
     return null;
   }
 
   /* O(n), n = number of nodes*/
   reverse() {
     let curr = this.head;
+    this.tail = this.head;
     let prev: NodeType<T> = null;
     let next: NodeType<T> = null;
 
