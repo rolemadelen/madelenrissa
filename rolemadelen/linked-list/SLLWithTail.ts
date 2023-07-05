@@ -13,6 +13,7 @@ interface ILinkedList<T> {
   getBack(): T | null;
   reverse(): void;
   insert(index: number, data: T): void;
+  clear(): void;
   traverse(): void;
 }
 
@@ -65,24 +66,30 @@ export class SinglyLinkedList<T> implements ILinkedList<T> {
   popFront(): NodeType<T> {
     if (this.isEmpty()) return null;
 
-    const removedNode = this.head;
-    this.head = this.head && this.head.next;
+    let removedNode = this.head;
+    if (this.length === 1) {
+      this.head = null;
+      this.tail = null;
+      this.length = 0;
+      return removedNode;
+    }
 
+    this.head = this.head && this.head.next;
     this.length -= 1;
+
     return removedNode;
   }
 
   /* O(n), n = number of nodes */
   popBack(): NodeType<T> {
     if (this.isEmpty()) return null;
-    let nodeTBDel: NodeType<T> = null;
+    let removedNode = this.head;
 
     if (this.length === 1) {
-      nodeTBDel = this.head;
       this.head = null;
       this.tail = null;
       this.length = 0;
-      return nodeTBDel;
+      return removedNode;
     }
 
     let curr = this.head;
@@ -90,14 +97,14 @@ export class SinglyLinkedList<T> implements ILinkedList<T> {
       curr = curr.next;
     }
 
-    nodeTBDel = this.tail;
+    removedNode = this.tail;
     if (curr) {
       curr.next = null;
       this.tail = curr;
       this.length -= 1;
     }
 
-    return nodeTBDel;
+    return removedNode;
   }
 
   /* O(1) */
@@ -149,6 +156,13 @@ export class SinglyLinkedList<T> implements ILinkedList<T> {
       newNode.next = curr.next;
       curr.next = newNode;
       this.length += 1;
+    }
+  }
+
+  /* O(n), n = number of nodes */
+  clear() {
+    while (!this.isEmpty()) {
+      this.popFront();
     }
   }
 
