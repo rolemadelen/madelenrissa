@@ -12,19 +12,19 @@
 
 - Singly Linked List
   - Implement (with/without tail pointer)
-    - [ ] size()
-    - [ ] isEmpty()
-    - [ ] pushFront(value)
-    - [ ] pushBack(value)
-    - [ ] popFront()
-    - [ ] popBack()
-    - [ ] getFront()
-    - [ ] getBack()
-    - [ ] reverse()
-    - [ ] insert(index, value) - 0-based index
-  - [ ] Know the time complexity for each methods
-  - [ ] Know the difference between Singly, Doubly and Circular Linked List
-  - [ ] Know when to use Linked Lists and Arrays
+    - [x] size()
+    - [x] isEmpty()
+    - [x] pushFront(value)
+    - [x] pushBack(value)
+    - [x] popFront()
+    - [x] popBack()
+    - [x] getFront()
+    - [x] getBack()
+    - [x] reverse()
+    - [x] insert(index, value) - 0-based index
+  - [x] Know the time complexity for each methods
+  - [x] Know the difference between Singly, Doubly and Circular Linked List
+  - [x] Know when to use Linked Lists and Arrays
 - Stack
   - Implement using Linked List
     - [ ] top()
