@@ -36,7 +36,7 @@
 
 ## Perforamnce
 - Without Tail
-<img width="840" alt="noTail" src="https://github.com/rolemadelen/madelenrissa/assets/102719063/973be24c-38e4-4425-8ca8-1c522a77956f">
+<img width="840" alt="noTail" src="https://github.com/rolemadelen/madelenrissa/assets/102719063/b10e5e43-6365-462e-a31b-857a43aa6d10">
 
 - With Tail
 
