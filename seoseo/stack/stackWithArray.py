@@ -5,45 +5,30 @@ def printTime(start):
     print("runtime :", time.time() - start)  # current time - start time = runtime
 
 
-# Start : Code
+class Stack:
+    def __init__(self):
+        self.stack = []  # empty list for stack
 
-# class for Node without the Tail
-class Node :
-    def __init__(self, value = 0, next=None) -> None:
-        self.value = value
-        self.next = next
+    def push(self, item):
+        self.stack.append(item)  # push as append
 
-# class : Stack
-class Stack : 
-    def __init__ (self) : 
-        self.head = None
+    def pop(self):
+        if not self.isEmpty():
+            return self.stack.pop()  # 
+        else:
+            return None
+
+    def top(self):
+        if not self.isEmpty():
+            return self.stack[-1]  # return top
+        else:
+            return None
 
     def isEmpty(self):
-        return self.head is None
-    
-    def push(self, value): 
-        node = Node(value)
-        if self.isEmpty() :
-            self.head = node
-        else:
-            node.next = self.head
-            self.head = node
-    
-    def pop(self):
-        if self.isEmpty() :
-            return -1 
-        else:
-            popped = self.head.value
-            self.head = self.head.next
-            return popped
-    
-    def top(self):
-        if self.isEmpty():
-                return -1
-        return self.head.value
+        return len(self.stack) == 0
 
-# Usage example:
-print("Stack with Linked-list")
+
+print("Stack with Array")
 stack = Stack()
 printTime(start)
 print(stack.isEmpty())
@@ -81,3 +66,4 @@ printTime(start)
 print(stack.isEmpty())
 # End : Code
 printTime(start)
+
