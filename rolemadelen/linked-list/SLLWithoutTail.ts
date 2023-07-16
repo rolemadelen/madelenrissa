@@ -1,4 +1,4 @@
-/* Singly Linked List without using a tail poniter */
+* Singly Linked List without using a tail poniter */
 
 import { Node, NodeType } from "./Node";
 
