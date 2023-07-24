@@ -17,6 +17,30 @@
 
 ## Performance
 
+- Size
+
+  - Linked List : Can controll the size dynamically.
+  - Fixed-size Array : The size is fixed, and you need to specify the size when creating the queue.
+
+- Insert & Delete
+
+  - Linked List : Finding the specific position and changing the links between nodes result in an average time complexity of O(n).
+  - Fixed-size Array : Insert or delete elements in O(1) time.
+
+- Memory Usage
+
+  - Linked List : Since the array's size is fixed, even if the number of elements in the queue is less than the array's size, the array's size remains unchanged, leading to memory waste.
+  - Fixed-size Array : It is more memory-efficient, becuase the size dynamically adjusts based on the number of elements.
+
+- Overflow & Underflow
+
+  - Linked List : Attempting to add elements beyond the queue's size causes overflow. Also, trying to remove elements from an empty queue results in underflow.
+  - Fixed-size Array : Due to dynamic resizing, adding elements beyond the queue's size or removing elements from an empty queue is possible.
+
+- Concurrency
+  - Linked List : The fixed size may cause synchronization issues when multiple threads access the queue simultaneously.
+  - Fixed-size Array : Since the size dynamically adjusts, there are no synchronization issues during queue access.
+
 ### Implement using Linked List
 
 ![queueCompare](https://github.com/rolemadelen/madelenrissa/assets/102719063/98248599-f792-4434-a7dd-97869b79682d)
