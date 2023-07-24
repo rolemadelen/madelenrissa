@@ -29,9 +29,9 @@
 
 - Memory Usage
 
-  - Linked List : Since the array's size is fixed, even if the number of elements in the queue is less than the array's size, the array's size remains unchanged, leading to memory waste.
-  - Fixed-size Array : It is more memory-efficient, becuase the size dynamically adjusts based on the number of elements.
-
+  - Linked List : It is more memory-efficient, becuase the size dynamically adjusts based on the number of elements.
+  - Fixed-size Array : Since the array's size is fixed, even if the number of elements in the queue is less than the array's size, the array's size remains unchanged, leading to memory waste.
+  
 - Overflow & Underflow
 
   - Linked List : Attempting to add elements beyond the queue's size causes overflow. Also, trying to remove elements from an empty queue results in underflow.
