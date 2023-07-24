@@ -3,4 +3,8 @@
   - Know the difference between Singly, Doubly, and Circular Linked Lists.
   - Know the benefit of using Linked Lists over Arrays and vice versa.
 - [Stack](./stack)
-  - Can implement a stack with linked list (and array)
+  - Can implement a stack with linked list (and array).
+- [Queue](./queue)
+  - Can implement a queue with a linked list.
+  - Can implement a queue with an array.
+  - Know the limitation of queue when implemented with a fixed-size array.
