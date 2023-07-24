@@ -25,7 +25,7 @@
   - [x] Know the time complexity for each methods
   - [x] Know the difference between Singly, Doubly and Circular Linked List
   - [x] Know when to use Linked Lists and Arrays
-- [Stack](#stack)
+- [Stack](#stack) | [issue](https://github.com/rolemadelen/madelenrissa/issues/2)
   - Implement using Linked List
     - [x] top()
     - [x] isEmpty()
