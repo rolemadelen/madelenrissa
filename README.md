@@ -34,19 +34,19 @@
   - [x] Know the time complexity for each methods
 - Queue
   - Implement using Linked List
-    - [ ] getFront()
-    - [ ] getRear()
-    - [ ] enqueue(value)
-    - [ ] dequeue()
+    - [x] getFront()
+    - [x] getRear()
+    - [x] enqueue(value)
+    - [x] dequeue()
   - Implement using fixed-size array
-    - [ ] getFront()
-    - [ ] getRear()
-    - [ ] isEmpty()
-    - [ ] isFull()
-    - [ ] enqueue(value)
-    - [ ] dequeue()
-    - [ ] What's the limitation of Queue implemented with a fixed-size array?
-  - [ ] Know the time complexity for each methods
+    - [x] getFront()
+    - [x] getRear()
+    - [x] isEmpty()
+    - [x] isFull()
+    - [x] enqueue(value)
+    - [x] dequeue()
+    - [x] What's the limitation of Queue implemented with a fixed-size array?
+  - [x] Know the time complexity for each methods
 - Tree
   - [ ] [Intro to Trees (video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
   - [ ] [Tree Traversal (video)](https://www.coursera.org/lecture/data-structures/tree-traversal-fr51b)
