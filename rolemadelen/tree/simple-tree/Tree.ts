@@ -1,6 +1,6 @@
-export type TreeNodeType<T> = TreeNode<T> | null;
+export type TreeNodeType<T> = SimpleTreeNode<T> | null;
 
-export class TreeNode<T> {
+export class SimpleTreeNode<T> {
     left: TreeNodeType<T> = null;
     mid: TreeNodeType<T> = null;
     right: TreeNodeType<T> = null;
@@ -16,7 +16,7 @@ export class Tree<T> {
 
     /* insert the data in next available space */
     insertNode(data: T): void {
-        const newNode = new TreeNode<T>(data);
+        const newNode = new SimpleTreeNode<T>(data);
 
         if(this.root === null) {
             this.root = newNode
@@ -65,7 +65,7 @@ export class Tree<T> {
         console.log()
     }
 
-    preorder(node: TreeNode<T> = this.root): void {
+    preorder(node: SimpleTreeNode<T> = this.root): void {
         if(node === null) return
 
         process.stdout.write(`${node.data} `)
@@ -73,7 +73,7 @@ export class Tree<T> {
         this.preorder(node.mid)
         this.preorder(node.right)
     }
-    inorder(node: TreeNode<T> = this.root): void {
+    inorder(node: SimpleTreeNode<T> = this.root): void {
         if(node === null) return
 
         this.inorder(node.left)
@@ -81,7 +81,7 @@ export class Tree<T> {
         this.inorder(node.mid)
         this.inorder(node.right)
     }
-    postorder(node: TreeNode<T> = this.root): void {
+    postorder(node: SimpleTreeNode<T> = this.root): void {
         if(node === null) return
 
         this.inorder(node.left)
