@@ -8,3 +8,9 @@
   - Can implement a queue with a linked list.
   - Can implement a queue with an array.
   - Know the limitation of queue when implemented with a fixed-size array.
+- Tree
+  - [Simple Tree](./tree/simple-tree/)
+  - [Binary Search Tree](./tree/binary-search-tree/)
+    - Know the difference between DFS and BFS
+    - Can implement DFS (Inorder, Preorder, Postorder)
+    - Can implement BFS

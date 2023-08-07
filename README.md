@@ -48,24 +48,24 @@
     - [x] What's the limitation of Queue implemented with a fixed-size array?
   - [x] Know the time complexity for each methods
 - Tree
-  - [ ] [Intro to Trees (video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
-  - [ ] [Tree Traversal (video)](https://www.coursera.org/lecture/data-structures/tree-traversal-fr51b)
+  - [x] [Intro to Trees (video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
+  - [x] [Tree Traversal (video)](https://www.coursera.org/lecture/data-structures/tree-traversal-fr51b)
     - Inorder
     - Preorder
     - Postorder
-  - [ ] Understand BFS (Breadth First Search)
-  - [ ] Understand DFS (Depth First Serach)
+  - [x] Understand BFS (Breadth First Search)
+  - [x] Understand DFS (Depth First Serach)
 - Binary Search Tree (BST)
   - Implement
-    - [ ] insert(value)
+    - [x] insert(value)
     - DFS
-      - [ ] inorder()
-      - [ ] preorder()
-      - [ ] postorder()
-    - getMin()
-    - getMax()
-    - bfs() -- print values in level order
-    - existInTree(value)
+      - [x] inorder()
+      - [x] preorder()
+      - [x] postorder()
+    - [x] getMin()
+    - [x] getMax()
+    - [x] bfs() -- print values in level order
+    - [x] existInTree(value)
 - Heap
   - TBD
 - Priority Queue
