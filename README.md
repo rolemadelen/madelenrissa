@@ -67,7 +67,8 @@
     - [x] bfs() -- print values in level order
     - [x] existInTree(value)
 - Heap
-  - TBD
+  - [ ] Implement MinHeap
+  - [ ] Implement MaxHeap
 - Priority Queue
   - TBD
 - Graph
