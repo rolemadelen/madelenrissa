@@ -14,3 +14,4 @@
     - Know the difference between DFS and BFS
     - Can implement DFS (Inorder, Preorder, Postorder)
     - Can implement BFS
+- [Heap](./heap/)
