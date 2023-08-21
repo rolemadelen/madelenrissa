@@ -168,7 +168,7 @@ def main():
     else:
         print("Min Heap is empty.")
 
-    # 최대 힙 예제
+    # Max Heap example
     max_heap = MaxHeap()
 
     print("\nInsertion order for nodes in Max Heap:")
@@ -187,3 +187,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# delete 기능 구현하기
