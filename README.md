@@ -67,14 +67,15 @@
     - [x] bfs() -- print values in level order
     - [x] existInTree(value)
 - Heap
-  - [ ] Implement MinHeap
-  - [ ] Implement MaxHeap
+  - [x] Implement MinHeap
+  - [x] Implement MaxHeap
 - Priority Queue
-  - TBD
+  - no implementation
+  - Understand what PQ is.
 - Graph
-  - Adjacency List
-  - Adjacency Matrix
-  - TBD
+  - Implement
+    - [ ] Adjacency List
+    - [ ] Adjacency Matrix
 
 ---
 
