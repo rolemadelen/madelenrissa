@@ -70,11 +70,12 @@
   - [x] Implement MinHeap
   - [x] Implement MaxHeap
 - Priority Queue
-  - TBD
+  - no implementation
+  - Understand what PQ is.
 - Graph
-  - Adjacency List
-  - Adjacency Matrix
-  - TBD
+  - Implement
+    - [ ] Adjacency List
+    - [ ] Adjacency Matrix
 
 ---
 
