@@ -74,8 +74,8 @@
   - Understand what PQ is.
 - Graph
   - Implement
-    - [ ] Adjacency List
-    - [ ] Adjacency Matrix
+    - [x] Adjacency List
+    - [x] Adjacency Matrix
 
 ---
 
